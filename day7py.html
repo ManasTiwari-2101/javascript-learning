@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Library</title>
+</head>
+<body>
+    <script>
+        function createbook() {
+            let title = prompt("Enter book title:");
+            let author = prompt("Enter book author:");
+            let year = prompt("Enter book year:");
+            return { title, author, year };
+        }
+
+        function displaybook(book) {
+            console.log("\nBook Details:");
+            console.log(`Title: ${book.title}`);
+            console.log(`Author: ${book.author}`);
+            console.log(`Year: ${book.year}`);
+        }
+
+        function getsummary(book) {
+            console.log(`${book.title} was written by ${book.author} in ${book.year}.`);
+        }
+
+        let library = {};
+        let count = prompt("How many books do you want to enter?");
+
+        for (let i = 0; i < count; i++) {
+            library["book" + (i + 1)] = createbook();
+        }
+
+        for (let i = 0; i < count; i++) {
+            displaybook(library["book" + (i + 1)]);
+            getsummary(library["book" + (i + 1)]);
+        }
+    </script>
+</body>
+</html>
+
+<!-- //Live Server use karne ke baad ye input lene lagega lekin console me output dega
+//Browser me prompt ke through input lega aur console me output dega 
+//jo ki inspect me jaake console tab me dekh sakte ho
+//Agar aapko output webpage pe chahiye to document.write() ya innerHTML ka use kar sakte ho -->
+

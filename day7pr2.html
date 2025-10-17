@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Library</title>
+</head>
+<body>
+    <h2>📚 Book Library</h2>
+
+    <script>
+        function createbook() {
+            let title = prompt("Enter book title:");
+            let author = prompt("Enter book author:");
+            let year = prompt("Enter book year:");
+            return { title, author, year };
+        }
+
+        function displaybook(book) {
+            document.write("<hr>");
+            document.write("<h3>Book Details:</h3>");
+            document.write("Title: " + book.title + "<br>");
+            document.write("Author: " + book.author + "<br>");
+            document.write("Year: " + book.year + "<br>");
+        }
+
+        function getsummary(book) {
+            document.write("<em>" + book.title + " was written by " + book.author + " in " + book.year + ".</em><br><br>");
+        }
+
+        let library = {};
+        let count = prompt("How many books do you want to enter?");
+
+        for (let i = 0; i < count; i++) {
+            library["book" + (i + 1)] = createbook();
+        }
+
+        for (let i = 0; i < count; i++) {
+            displaybook(library["book" + (i + 1)]);
+            getsummary(library["book" + (i + 1)]);
+        }
+
+        document.write("<hr><h3>✅ All books have been displayed successfully!</h3>");
+    </script>
+</body>
+</html>
+<!-- 
+| Tag    | Role       | What it does visually                  |
+| ------ | ---------- | -------------------------------------- |
+| `<hr>` | Divider    | Draws a horizontal line                |
+| `<h3>` | Heading    | Makes “Book Details” bold and large    |
+| `<br>` | Line break | Moves to next line after each property |
+| `<em>` | Emphasis   | Italicizes the summary sentence        |
+
+//<hr> ye ek horizontal line draw kar deta hai
+//<h3> ye heading ko bold aur bada kar deta hai
+//<br> ye line break karta hai har property ke baad
+//<em> ye italic kar deta hai aur ye browser ko batata hai ki ye imp part hai</em> 
+-->
