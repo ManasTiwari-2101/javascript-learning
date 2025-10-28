@@ -35,3 +35,8 @@
 // console.log(a || b); // true   (OR)
 // console.log(!a);     // false  (NOT)
 // console.log(!b);     // true   (NOT)
+
+//alert(3+3) is not appicable here we are using nodeJS not browser
+
+//console.log(typeof null); //"object"
+//console.log(typeof undefined); //"undefined"
