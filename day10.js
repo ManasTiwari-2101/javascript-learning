@@ -6,3 +6,4 @@
 // let num=Math.floor((Math.random()*(max-min+1))+min) here i used Math.floor to round off the decimal values to nearest lower integer
 // and i multiplied Math.random() with (max-min+1) to get the values in range and then added min to shift the range from 0 to min
 // console.log(num) 
+

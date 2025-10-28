@@ -154,3 +154,30 @@
 // ➡️ Use **`Object.seal()`**.
 
 // Personally i will prefer Object.seal() and try to use this in every program so it will become a habit.
+
+// using symbol as a key inside objects
+// let id=Symbol("id")
+// let user={
+//     name:"Manas",
+//     [id]:101 //here i used symbol as a key
+// }
+// Now to access the symbol key we have to use bracket notation
+// console.log(user[id]) //101
+// console.log(user.id) //undefined because id is symbol key not string key
+// Symbols are unique and hidden keys that prevent name collisions and accidental access.
+// Symbols are often used to add metadata or special properties to objects without affecting their normal behavior.
+
+// using "keys" so that we can understand that .method is not always a way to print the value of key
+// let user={
+//     name:"Manas",
+//     age:22,
+//     city:"Delhi"
+// }
+// console.log(user.age) //22
+// Now what if we do- "age" as key
+// let user={
+//     name:"Manas",
+//     "age":22, //here age is key
+//     city:"Delhi"
+// }
+// console.log(user["age"] //22 Now we have to use bracket notation to access the value of age key
