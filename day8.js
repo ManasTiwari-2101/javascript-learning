@@ -52,3 +52,12 @@
 // console.log(book1.getSummary());
 // console.log(book2.getSummary());
 
+//bsic filter usage
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//const newNums=numbers.filter( (item) => item>4) //filter will return a new array based on condition provided in the callback function
+//console.log(newNums); //[ 5, 6, 7, 8, 9, 10 ]
+
+//reduce function use
+// const nums = [1, 2, 3, 4, 5];
+//const sum=nums.reduce((arr,cur) => arr+cur,0) 
+//console.log(sum); //15
