@@ -191,3 +191,40 @@
 // 💡 It’s like `map()` but doesn’t return anything.
 
 // ---
+
+// Maps
+//const map=new Map()
+//map.set('IN','India')
+//map.set('US','United States')
+//map.set('FR','France')
+//console.log(map)
+
+//Using for...of loop to iterate through map
+// for(const [key,value] of map){ // here destructuring is used to get key and value from map
+//     console.log(`${key} : ${value}`) //`` these are called backticks
+// }
+// This same structure cannot be used to loop through objects
+
+//Using for..in loop to iterate through object
+// const obj={
+//     IN:'India',
+//     US:'United States',
+//     FR:'France'
+// }
+// for (const key in obj) {
+//     console.log(`${key} for ${obj[key]}`); // here obj[key] is used to get value of key
+    
+// } // this was forin loop
+// This same structure cannot be used to loop through maps
+
+//using foreach in arrays
+//const arr=["js","java","ruby","python"]
+//arr.foreach( (item) => {
+//    console.log(item)
+// })
+
+//another way to use foreach is to use already declared function inside () of foreach
+// function printing(item){
+//     console.log(item)
+// }
+// arr.forEach(printing) // here we just passed the function name without () because we are not calling it we are just passing it as a reference
